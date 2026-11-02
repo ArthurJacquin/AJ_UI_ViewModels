@@ -16,6 +16,6 @@ public:
 	virtual FName GetCategoryName() const override { return FName("Plugins"); }
 	virtual FName GetSectionName() const override { return FName("AJ View Models"); }
 	
-	UPROPERTY(config, EditAnywhere, meta=(AllowedClasses="/Script/AJ_ViewModelConfig.AJ_ViewModelConfig"))
+	UPROPERTY(config, EditAnywhere, meta=(AllowedClasses="/Script/AJ_UI_ViewModels.AJ_ViewModelConfig"))
 	FSoftObjectPath ViewModelsConfig;
 };
