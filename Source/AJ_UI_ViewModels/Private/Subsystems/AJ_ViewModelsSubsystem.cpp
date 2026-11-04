@@ -7,7 +7,7 @@
 
 UAJ_ViewModelsSubsystem* UAJ_ViewModelsSubsystem::GetInstance(const UObject* WorldContextObject)
 {
-	UWorld* World = IsValid(WorldContextObject) ? GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull) : GWorld;
+	UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull);
 	if (IsValid(World))
 	{
 		return World->GetSubsystem<UAJ_ViewModelsSubsystem>();

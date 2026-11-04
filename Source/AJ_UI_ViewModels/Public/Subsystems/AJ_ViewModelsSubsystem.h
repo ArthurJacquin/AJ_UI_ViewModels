@@ -19,7 +19,7 @@ class AJ_UI_VIEWMODELS_API UAJ_ViewModelsSubsystem : public UWorldSubsystem
 	GENERATED_BODY()
 	
 public:
-	static UAJ_ViewModelsSubsystem* GetInstance(const UObject* WorldContextObject = nullptr);
+	static UAJ_ViewModelsSubsystem* GetInstance(const UObject* WorldContextObject);
 	
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 	virtual void Deinitialize() override;
